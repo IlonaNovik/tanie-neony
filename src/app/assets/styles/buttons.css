@@ -1,0 +1,81 @@
+.neon-button-nav {
+  @apply px-4 py-2 flex justify-center items-center text-white font-bold border-2 border-transparent rounded-lg shadow-none;
+  transition:
+    border-color 0.3s,
+    text-shadow 0.3s,
+    box-shadow 0.5s;
+}
+
+.neon-button-nav.active {
+  text-shadow:
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+}
+
+.neon-button-nav svg:hover {
+  filter: drop-shadow(0 0 0.5em var(--foreground-rgb));
+  transition: filter 0.3s;
+}
+
+.neon-button-nav:hover {
+  border-color: var(--clr-neon);
+  text-shadow:
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+  box-shadow:
+    inset 0 0 0.5em 0 var(--clr-neon),
+    0 0 0.5em 0 var(--clr-neon);
+}
+
+.neon-button {
+  @apply text-lg uppercase font-bold px-4 py-2 rounded-lg relative;
+  border: var(--clr-neon) 0.125em solid;
+  text-shadow:
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+  box-shadow:
+    inset 0 0 0.5em 0 var(--clr-neon),
+    0 0 0.5em 0 var(--clr-neon);
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}

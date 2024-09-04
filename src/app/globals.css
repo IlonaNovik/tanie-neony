@@ -1,0 +1,34 @@
+@import url("assets/styles/buttons.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: #fff;
+  --clr-neon: #ff14bd;
+}
+
+body {
+  color: var(--foreground-rgb);
+  background-color: #3a2870;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+section#hero {
+  background-image: url("./assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-neon-pink {
+  color: var(--foreground-rgb);
+  text-shadow:
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+}
