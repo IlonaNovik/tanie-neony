@@ -18,7 +18,6 @@ export const Navigation: React.FC<NavigationProps> = ({
 
   return (
     <motion.nav
-      aria-label="Global"
       className="mx-auto flex h-16 max-w-7xl items-center justify-between p-4 uppercase transition-all duration-500 ease-in-out lg:px-8"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -52,7 +51,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <Link href="#" className="neon-button-nav !p-2">
+        <Link href="#" className="neon-button-nav !p-2" title="Shopping Cart">
           <ShoppingCartIcon className="size-6" />
         </Link>
       </div>

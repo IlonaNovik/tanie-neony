@@ -32,9 +32,9 @@ export const HeroSection: React.FC = () => {
                   <motion.a
                     href="#"
                     className="neon-button"
-                    initial={{ opacity: 0, y: 100 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 1.5 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 3 }}
                   >
                     Sprawdź nasze produkty
                   </motion.a>
@@ -72,7 +72,7 @@ export const HeroSection: React.FC = () => {
                       }}
                       transition={{
                         opacity: { duration: 1, delay: 0.5 },
-                        filter: { duration: 2, delay: 1, type: "spring" },
+                        filter: { duration: 1, delay: 1, type: "spring" },
                       }}
                     />
                   </div>
@@ -88,7 +88,7 @@ export const HeroSection: React.FC = () => {
                       }}
                       transition={{
                         opacity: { duration: 1, delay: 1.5 },
-                        filter: { duration: 2, delay: 2, type: "spring" },
+                        filter: { duration: 1, delay: 2, type: "spring" },
                       }}
                     />
                   </div>
@@ -106,7 +106,7 @@ export const HeroSection: React.FC = () => {
                       }}
                       transition={{
                         opacity: { duration: 1, delay: 2.5 },
-                        filter: { duration: 2, delay: 3, type: "spring" },
+                        filter: { duration: 1, delay: 3, type: "spring" },
                       }}
                     />
                   </div>
@@ -122,7 +122,7 @@ export const HeroSection: React.FC = () => {
                       }}
                       transition={{
                         opacity: { duration: 1, delay: 0.7 },
-                        filter: { duration: 2, delay: 1.2, type: "spring" },
+                        filter: { duration: 1, delay: 1.2, type: "spring" },
                       }}
                     />
                   </div>
