@@ -14,7 +14,7 @@ export const HeroSection: React.FC = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
                 >
-                  <span className="text-neon-pink">Neony</span> na zamówienie w
+                  <span className="text-white-glow">Neony</span> na zamówienie w
                   przystępnej cenie
                 </motion.h1>
                 <motion.p
@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
                 <div className="mt-10 flex items-center gap-x-6">
                   <motion.a
                     href="#"
-                    className="neon-button"
+                    className="neon-button-shade"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 3 }}

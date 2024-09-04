@@ -10,8 +10,7 @@
 }
 
 body {
-  color: var(--foreground-rgb);
-  background-color: #3a2870;
+  @apply bg-neon-purple-dark text-white;
 }
 
 @layer utilities {
@@ -26,8 +25,15 @@ section#hero {
   background-size: cover;
 }
 
-.text-neon-pink {
+.text-white-glow {
   color: var(--foreground-rgb);
+  text-shadow:
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+}
+
+.text-neon-pink-glow {
+  color: var(--clr-neon);
   text-shadow:
     0 0 0.125em hsl(0 0% 100% / 0.3),
     0 0 0.45em currentColor;

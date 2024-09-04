@@ -27,6 +27,7 @@
     0 0 0.5em 0 var(--clr-neon);
 }
 
+.neon-button-shade,
 .neon-button {
   @apply text-lg uppercase font-bold px-4 py-2 rounded-lg relative;
   border: var(--clr-neon) 0.125em solid;
@@ -38,7 +39,7 @@
     0 0 0.5em 0 var(--clr-neon);
 }
 
-.neon-button::before {
+.neon-button-shade::before {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -52,6 +53,7 @@
   opacity: 0.7;
 }
 
+.neon-button-shade::after,
 .neon-button::after {
   content: "";
   position: absolute;
@@ -66,15 +68,21 @@
   transition: opacity 100ms linear;
 }
 
+.neon-button-shade:hover,
+.neon-button-shade:focus,
 .neon-button:hover,
 .neon-button:focus {
   text-shadow: none;
 }
 
+.neon-button-shade:hover::before,
+.neon-button-shade:focus::before,
 .neon-button:hover::before,
 .neon-button:focus::before {
   opacity: 1;
 }
+.neon-button-shade:hover::after,
+.neon-button-shade:focus::after,
 .neon-button:hover::after,
 .neon-button:focus::after {
   opacity: 1;
