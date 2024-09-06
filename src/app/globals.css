@@ -9,6 +9,10 @@
   --clr-neon: #ff14bd;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-neon-purple-dark text-white;
 }

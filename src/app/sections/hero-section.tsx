@@ -5,10 +5,10 @@ import { HeroImages } from "../components/client/hero-images";
 export const HeroSection: React.FC = () => {
   return (
     <section id="hero" aria-labelledby="hero">
-      <div className="mx-auto flex max-w-7xl flex-row px-6 py-36 md:min-h-screen md:items-center md:pb-0 md:pt-16">
+      <div className="isolate mx-auto flex max-w-7xl flex-row px-6 py-36 md:min-h-screen md:items-center md:pb-0 md:pt-16">
         <div className="lg:max-w-2xl">
           <motion.h1
-            className="text-4xl font-bold tracking-tight text-white md:text-4xl lg:text-6xl"
+            className="text-4xl font-bold tracking-tight text-white lg:text-6xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -27,7 +27,7 @@ export const HeroSection: React.FC = () => {
           </motion.p>
           <div className="mt-10 flex items-center gap-x-6">
             <motion.a
-              href="#"
+              href="#bestsellers"
               className="neon-button-shade"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
