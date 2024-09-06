@@ -5,7 +5,7 @@ import { HeroImages } from "../components/client/hero-images";
 export const HeroSection: React.FC = () => {
   return (
     <section id="hero" aria-labelledby="hero">
-      <div className="isolate mx-auto flex max-w-7xl flex-row px-6 py-36 min-h-screen md:items-center md:pb-0 md:pt-16">
+      <div className="isolate mx-auto flex min-h-screen max-w-7xl flex-row px-6 py-36 md:items-center md:pb-0 md:pt-16">
         <div className="lg:max-w-2xl">
           <motion.h1
             className="text-4xl font-bold tracking-tight lg:text-6xl"

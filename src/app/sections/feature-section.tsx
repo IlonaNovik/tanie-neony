@@ -41,53 +41,45 @@ export const FeatureSection: React.FC = () => {
 
   return (
     <section id="features" aria-labelledby="features">
-      <div className="flex min-h-screen items-center">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-neon-pink">
-              Cechy produktu
-            </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-              W pełni dostosowany do{" "}
-              <span className="text-white-glow">Twoich</span> potrzeb
-            </p>
-            <p className="mt-6 text-lg leading-8">
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-              Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-              at. In mi viverra elit nunc.
-            </p>
-          </div>
-          <div
-            ref={ref}
-            className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl"
-          >
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={feature.name}
-                  className="relative pl-16"
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={
-                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }
-                  }
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                >
-                  <dt className="text-base font-semibold leading-7">
-                    <div className="neon-button absolute left-0 top-0 flex size-10 items-center justify-center p-0">
-                      <feature.icon
-                        aria-hidden="true"
-                        className="size-6 drop-shadow-[0_0_0.5em_rgb(255_255_255)]"
-                      />
-                    </div>
-                    {feature.name}
-                  </dt>
-                  <dd className="mt-2 text-base leading-7">
-                    {feature.description}
-                  </dd>
-                </motion.div>
-              ))}
-            </dl>
-          </div>
+      <div className="flex min-h-screen max-w-7xl flex-col justify-center px-6 py-8 md:items-center lg:px-8">
+        <h2 className="text-base font-semibold text-neon-pink">
+          Cechy produktu
+        </h2>
+        <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+          W pełni dostosowany do <span className="text-white-glow">Twoich</span>{" "}
+          potrzeb
+        </p>
+        <p className="mt-6 text-lg">
+          Różne możliwości konfiguracji sterowania neonem
+        </p>
+        <div
+          ref={ref}
+          className="mt-10 max-w-2xl sm:mt-20 md:mt-16 lg:mt-24 lg:max-w-4xl"
+        >
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.name}
+                className="relative pl-16"
+                initial={{ opacity: 0, y: 40 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }
+                }
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+              >
+                <dt className="text-base font-semibold">
+                  <div className="neon-button absolute left-0 top-0 flex size-10 items-center justify-center p-0">
+                    <feature.icon
+                      aria-hidden="true"
+                      className="size-6 drop-shadow-[0_0_0.5em_rgb(255_255_255)]"
+                    />
+                  </div>
+                  {feature.name}
+                </dt>
+                <dd className="mt-2 text-base">{feature.description}</dd>
+              </motion.div>
+            ))}
+          </dl>
         </div>
       </div>
     </section>

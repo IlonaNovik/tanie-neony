@@ -46,7 +46,7 @@ const products = [
 export const ProductSection = () => {
   return (
     <section id="bestsellers" aria-labelledby="bestsellers">
-      <div className="mx-auto max-w-7xl items-center px-6 py-16 pb-10 md:py-10 md:min-h-screen md:pt-28">
+      <div className="mx-auto max-w-7xl items-center px-6 py-16 pb-10 md:min-h-screen md:py-10 md:pt-28">
         <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
           Nasze <span className="text-white-glow uppercase">bestsellery</span>
         </h2>

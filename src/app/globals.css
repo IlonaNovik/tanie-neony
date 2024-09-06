@@ -34,24 +34,23 @@ section#hero {
 }
 
 .hero-image:hover {
-  
   animation: intermittente 0.01s infinite alternate;
-  box-shadow:  0px 0px 35px var(red-neon-1), 
-    0 0 11px var(-pink-neon-1), 
-    0 0 2px var(-pink-neon-2), 
-    0 0 1px var(-pink-neon-3), 
-    0 0px 17px var(-pink-neon-1), 
-    inset 0px 0 17px var(-pink-neon-3), 
+  box-shadow:
+    0px 0px 35px var(red-neon-1),
+    0 0 11px var(-pink-neon-1),
+    0 0 2px var(-pink-neon-2),
+    0 0 1px var(-pink-neon-3),
+    0 0px 17px var(-pink-neon-1),
+    inset 0px 0 17px var(-pink-neon-3),
     inset 0px 0 30px var(-pink-neon-3);
 }
 
 /* ANIMATIONS */
 @keyframes intermittente {
-  75%{
+  75% {
     opacity: 0.7;
   }
 }
-
 
 .text-white-glow {
   color: var(--foreground-rgb);
