@@ -38,3 +38,17 @@ section#hero {
     0 0 0.125em hsl(0 0% 100% / 0.3),
     0 0 0.45em currentColor;
 }
+
+.slick-dots li.slick-active button:before {
+  color: var(--clr-neon) !important;
+}
+
+.slick-dots li button:before {
+  color: var(--foreground-rgb) !important;
+}
+
+.slick-arrow {
+  color: var(--foreground-rgb) !important;
+  height: 24px !important;
+  width: 24px !important;
+}
