@@ -1,29 +1,12 @@
 import Link from "next/link";
 
+import { CustomOrderImage } from "../components/client/custom-order-image";
+
 export const CustomOrderSection: React.FC = () => {
   return (
     <section id="custom-order" aria-labelledby="custom-order">
       <div className="relative h-screen">
-        <div className="relative h-80 overflow-hidden md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
-          <picture>
-            <source
-              srcSet="https://t4.ftcdn.net/jpg/07/33/37/07/360_F_733370709_JdsBj6orta0yPKL1fLVGU4UdYdotUWOI.jpg"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcSet="https://t4.ftcdn.net/jpg/07/33/37/07/360_F_733370709_JdsBj6orta0yPKL1fLVGU4UdYdotUWOI.jpg"
-              media="(min-width: 640px)"
-            />
-
-            <img
-              alt="Neon sign"
-              src="https://t4.ftcdn.net/jpg/07/33/37/07/360_F_733370709_JdsBj6orta0yPKL1fLVGU4UdYdotUWOI.jpg"
-              className="size-full object-cover object-left"
-              width={700}
-              height={700}
-            />
-          </picture>
-        </div>
+        <CustomOrderImage />
         <div className="mx-auto flex h-full max-w-7xl items-center">
           <div className="px-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
             <h2 className="text-base font-semibold leading-7 text-neon-pink">

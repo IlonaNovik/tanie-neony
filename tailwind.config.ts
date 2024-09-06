@@ -18,6 +18,7 @@ const config: Config = {
       },
       colors: {
         "neon-pink": "#ff14bd",
+        "neon-pink-dark": "#800a5f",
         "neon-purple": "#3a2870",
         "neon-purple-dark": "#1d1438",
       },
