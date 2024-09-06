@@ -21,7 +21,7 @@ export const HeroImage: React.FC<HeroImageProps> = ({ image }) => {
       ref={ref}
       alt={image.alt}
       src={image.src}
-      className="aspect-[2/3] rounded-xl object-cover transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-[0px_0px_40px_rgb(255,16,240)]"
+      className="hero-image aspect-[2/3] rounded-xl object-cover transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-[0px_0px_40px_rgb(255,16,240)]"
       initial={{ opacity: 0, filter: "brightness(0.5)" }}
       animate={
         isInView
