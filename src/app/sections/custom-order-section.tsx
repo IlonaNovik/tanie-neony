@@ -7,7 +7,7 @@ export const CustomOrderSection: React.FC = () => {
     <section id="custom-order" aria-labelledby="custom-order">
       <CustomOrderImage />
       <div className="mx-auto flex max-w-7xl items-center justify-center md:min-h-screen">
-        <div className="w-2/3 py-10 md:ml-auto md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
+        <div className="px-6 md:w-2/3 py-10 md:ml-auto md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
           <p className="text-base font-semibold text-neon-pink">
             Personalizowany produkt
           </p>
