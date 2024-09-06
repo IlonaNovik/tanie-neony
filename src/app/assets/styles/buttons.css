@@ -39,6 +39,13 @@
     0 0 0.5em 0 var(--clr-neon);
 }
 
+@media screen and (max-width: 640px) {
+  .neon-button-shade,
+  .neon-button {
+    @apply text-base;
+  }
+}
+
 .neon-button-shade::before {
   pointer-events: none;
   content: "";
@@ -51,6 +58,12 @@
   transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
   filter: blur(1em);
   opacity: 0.7;
+}
+
+@media screen and (max-width: 640px) {
+  .neon-button-shade::before {
+    @apply w-[65vw];
+  }
 }
 
 .neon-button-shade::after,

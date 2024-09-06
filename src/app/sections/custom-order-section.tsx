@@ -5,7 +5,7 @@ import { CustomOrderImage } from "../components/client/custom-order-image";
 export const CustomOrderSection: React.FC = () => {
   return (
     <section id="custom-order" aria-labelledby="custom-order">
-      <div className="relative h-screen">
+      <div className="relative flex min-h-screen flex-1">
         <CustomOrderImage />
         <div className="mx-auto flex h-full max-w-7xl items-center">
           <div className="px-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
