@@ -42,7 +42,7 @@ export const FeatureSection: React.FC = () => {
   return (
     <section id="features" aria-labelledby="features">
       <div className="flex min-h-screen justify-center px-6 py-8 md:items-center lg:px-8">
-        <div className="max-w-7xl flex flex-col justify-center items-center">
+        <div className="flex max-w-7xl flex-col items-center justify-center">
           <h2 className="text-base font-semibold text-neon-pink">
             Cechy produktu
           </h2>
