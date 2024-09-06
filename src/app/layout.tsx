@@ -4,6 +4,8 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/app/components/layout";
 
+import { Footer } from "./components/layout/footer";
+
 const inter = Nunito({
   subsets: ["latin"],
 });
@@ -32,6 +34,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
