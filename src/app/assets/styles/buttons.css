@@ -1,5 +1,5 @@
 .neon-button-nav {
-  @apply px-4 py-2 flex justify-center items-center text-white font-bold border-2 border-transparent rounded-lg shadow-none;
+  @apply px-4 py-2 flex justify-center items-center font-bold border-2 border-transparent rounded-lg shadow-none;
   transition:
     border-color 0.3s,
     text-shadow 0.3s,

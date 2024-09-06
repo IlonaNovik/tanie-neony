@@ -76,7 +76,7 @@ export const FeatureSection: React.FC = () => {
                     <div className="neon-button absolute left-0 top-0 flex size-10 items-center justify-center p-0">
                       <feature.icon
                         aria-hidden="true"
-                        className="size-6 text-white drop-shadow-[0_0_0.5em_rgb(255_255_255)]"
+                        className="size-6 drop-shadow-[0_0_0.5em_rgb(255_255_255)]"
                       />
                     </div>
                     {feature.name}
