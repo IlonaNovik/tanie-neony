@@ -1,6 +1,10 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
-import { CustomOrderImage } from "../components/client/custom-order-image";
+const CustomOrderImage = dynamic(
+  () => import("../components/client/custom-order-image"),
+  { ssr: false },
+);
 
 export default function CustomOrderSection() {
   return (

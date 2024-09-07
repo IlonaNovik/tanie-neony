@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-export const CustomOrderImage: React.FC = () => {
+const CustomOrderImage: React.FC = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -38,3 +38,5 @@ export const CustomOrderImage: React.FC = () => {
     </div>
   );
 };
+
+export default CustomOrderImage;
