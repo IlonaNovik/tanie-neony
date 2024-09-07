@@ -2,7 +2,7 @@ import * as motion from "framer-motion/client";
 
 import { HeroImages } from "../components/client/hero-images";
 
-export const HeroSection: React.FC = () => {
+export default function HeroSection() {
   return (
     <section id="hero" aria-labelledby="hero">
       <div className="isolate mx-auto flex min-h-screen max-w-7xl flex-row px-6 py-36 md:items-center md:pb-0 md:pt-16">
@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
               className="neon-button-shade"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 3 }}
+              transition={{ duration: 1, delay: 2 }}
             >
               Sprawdź nasze produkty
             </motion.a>
@@ -43,4 +43,4 @@ export const HeroSection: React.FC = () => {
       </div>
     </section>
   );
-};
+}

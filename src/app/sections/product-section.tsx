@@ -1,4 +1,7 @@
-import { ProductList } from "../components/product-list";
+import dynamic from "next/dynamic";
+const ProductList = dynamic(() => import("../components/product-list"), {
+  ssr: false,
+});
 
 const products = [
   {
@@ -43,7 +46,7 @@ const products = [
   },
 ];
 
-export const ProductSection = () => {
+export default function BestsellersSection() {
   return (
     <section id="bestsellers" aria-labelledby="bestsellers">
       <div className="mx-auto max-w-7xl items-center px-6 py-16 pb-10 md:min-h-screen md:py-10 md:pt-28">
@@ -57,4 +60,4 @@ export const ProductSection = () => {
       </div>
     </section>
   );
-};
+}

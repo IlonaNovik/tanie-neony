@@ -49,7 +49,7 @@ const settings = {
   ],
 };
 
-export const ProductList: FC<ProductListProps> = ({ products }) => {
+const ProductList: FC<ProductListProps> = ({ products }) => {
   return (
     <ul className="mt-8 sm:mt-12">
       <Slider {...settings}>
@@ -60,3 +60,5 @@ export const ProductList: FC<ProductListProps> = ({ products }) => {
     </ul>
   );
 };
+
+export default ProductList;

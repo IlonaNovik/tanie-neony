@@ -35,7 +35,7 @@ const features = [
     icon: FingerPrintIcon,
   },
 ];
-export const FeatureSection: React.FC = () => {
+export default function FeatureSection() {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -86,4 +86,4 @@ export const FeatureSection: React.FC = () => {
       </div>
     </section>
   );
-};
+}

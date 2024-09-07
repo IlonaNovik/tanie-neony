@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { CustomOrderImage } from "../components/client/custom-order-image";
 
-export const CustomOrderSection: React.FC = () => {
+export default function CustomOrderSection() {
   return (
     <section id="custom-order" aria-labelledby="custom-order">
       <CustomOrderImage />
@@ -28,4 +28,4 @@ export const CustomOrderSection: React.FC = () => {
       </div>
     </section>
   );
-};
+}
