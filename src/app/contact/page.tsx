@@ -1,16 +1,34 @@
+import Image from "next/image";
+
 import { ContactDetails } from "./components/contact-details";
 import { ContactForm } from "./components/contact-form";
+import ImgNeonCityMob from "../assets/images/neon-city-mob.webp";
+import ImgNeonCity from "../assets/images/neon-city.webp";
 
 export default function Contact() {
   return (
     <section id="contact">
       <div className="relative h-[40rem] overflow-hidden md:absolute md:left-0 md:h-full md:w-2/5 lg:w-1/2">
-        <div
-          id="contact-background"
-          className="absolute left-0 top-0 size-full bg-cover bg-center bg-no-repeat blur"
-          role="img"
-          aria-label="Background image of a neon city"
+        <Image
+          src={ImgNeonCity.src}
+          alt="Background image of a neon city"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="blur md:block"
+          loading="lazy"
         />
+
+        <Image
+          src={ImgNeonCityMob.src}
+          alt="Background image of a neon city"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="blur md:hidden"
+          loading="lazy"
+        />
+
         <div className="absolute left-0 top-0 flex size-full items-center justify-center">
           <ContactDetails />
         </div>

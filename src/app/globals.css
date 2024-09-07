@@ -39,16 +39,6 @@ section#hero {
   }
 }
 
-div#contact-background {
-  background-image: url("./assets/images/neon-city.webp");
-}
-
-@media screen and (max-width: 640px) {
-  div#contact-background {
-    background-image: url("./assets/images/neon-city-mob.webp");
-  }
-}
-
 .hero-image:hover {
   animation: intermittente 0.01s infinite alternate;
   box-shadow:
