@@ -3,7 +3,7 @@ import { ProductList } from "../components/product-list";
 const products = [
   {
     id: 1,
-    title: "Foto aparat",
+    title: "Błyskawica",
     href: "#",
     imageUrl:
       "https://i.pinimg.com/474x/1b/c8/3b/1bc83b10442340e07b91b4402e246ccf.jpg",
@@ -11,7 +11,7 @@ const products = [
   },
   {
     id: 2,
-    title: "Astronauta",
+    title: "Góry",
     href: "#",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTrN5NpKVnSC8HghCPBbBQnFic9n65kGFTA&s",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 3,
-    title: "Baletnica",
+    title: "Kobieta",
     href: "#",
     imageUrl:
       "https://neoneffect.co.uk/cdn/shop/collections/Hero_Banner_1024x1024.jpg?v=1680242594",
@@ -27,7 +27,7 @@ const products = [
   },
   {
     id: 4,
-    title: "Kieliszki",
+    title: "Mr. Packman",
     href: "#",
     imageUrl:
       "https://gdziejestneon.com/wp-content/uploads/2023/06/neon-led-pac-man-gdzie-jest-neon-com.webp",
@@ -35,7 +35,7 @@ const products = [
   },
   {
     id: 5,
-    title: "Kwiaty",
+    title: "Usta",
     href: "#",
     imageUrl:
       "https://totheneon.com/wp-content/uploads/2022/07/IMG_0095_Easy-Resize.com-1.jpg",

@@ -21,9 +21,11 @@ const config: Config = {
         "neon-pink-dark": "#800a5f",
         "neon-purple": "#3a2870",
         "neon-purple-dark": "#1d1438",
+        "error-red": "#ff6b6b",
+        lavender: "#b3b3cc",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
 export default config;
