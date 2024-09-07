@@ -1,16 +1,13 @@
 import { ContactDetails } from "./components/contact-details";
 import { ContactForm } from "./components/contact-form";
-import NeonCityImage from "../assets/images/neon-city.webp";
 
 export default function Contact() {
   return (
     <section id="contact">
       <div className="relative h-[40rem] overflow-hidden md:absolute md:left-0 md:h-full md:w-2/5 lg:w-1/2">
         <div
+          id="contact-background"
           className="absolute left-0 top-0 size-full bg-cover bg-center bg-no-repeat blur"
-          style={{
-            backgroundImage: `url(${NeonCityImage.src})`,
-          }}
           role="img"
           aria-label="Background image of a neon city"
         />

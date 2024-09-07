@@ -33,10 +33,19 @@ section#hero {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   section#hero {
     background-image: url("./assets/images/background-mob.png");
+  }
+}
+
+div#contact-background {
+  background-image: url("./assets/images/neon-city.webp");
+}
+
+@media screen and (max-width: 640px) {
+  div#contact-background {
+    background-image: url("./assets/images/neon-city-mob.webp");
   }
 }
 

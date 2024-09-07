@@ -10,9 +10,6 @@ export default function HeroSection() {
           <h1
             id="hero-title"
             className="text-4xl font-bold tracking-tight lg:text-6xl"
-            // initial={{ opacity: 0 }}
-            // animate={{ opacity: 1 }}
-            // transition={{ duration: 1 }}
           >
             <span className="text-white-glow">Neony</span> na zamówienie w
             przystępnej cenie
