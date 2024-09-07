@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 import { navigation } from "./header";
 import logo from "../../assets/images/logo.svg";
@@ -14,6 +15,10 @@ interface MobileMenuProps {
 
 export const MobileMenu: React.FC<MobileMenuProps> = ({ open, setOpen }) => {
   const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname, setOpen]);
 
   return (
     <Dialog open={open} onClose={setOpen} className="lg:hidden">

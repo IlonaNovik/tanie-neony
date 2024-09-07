@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Tanie neony",
   description:
     "Dobrej jakości neony na zamówienie w przystępnej cenie. Duży wybór kolorów i kształtów. Moliwość personalizacji. Stwórz swój własny neon już dziś!",
-  viewport: "width=device-width, initial-scale=1",
+  viewport: "width=device-width, initial-scale=1.0",
   keywords:
     "neony, neony na zamówienie, tanie neony, neony personalizowane, neony led, neony led na zamówienie, neony led personalizowane",
   openGraph: {

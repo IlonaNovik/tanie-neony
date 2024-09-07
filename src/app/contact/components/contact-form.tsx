@@ -41,7 +41,10 @@ export const ContactForm = () => {
   };
 
   return (
-    <form className="px-6 py-8 pt-32 lg:px-8" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="w-full px-6 py-10 md:w-max md:pt-32 lg:px-8"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <FormField
@@ -109,7 +112,7 @@ export const ContactForm = () => {
               <TextArea
                 id="message"
                 rows={4}
-                placeholder="Your message..."
+                placeholder="Wpisz swoją wiadomość..."
                 {...register("message", { required: true })}
               />
             </FormField>

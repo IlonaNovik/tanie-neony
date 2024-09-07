@@ -32,6 +32,7 @@ export const HeroImage: React.FC<HeroImageProps> = ({ image }) => {
         opacity: { duration: 1, delay: opacityDelay },
         filter: { duration: 1, delay: filterDelay, type: "spring" },
       }}
+      loading="lazy"
     />
   );
 };
