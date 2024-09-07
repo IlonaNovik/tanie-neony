@@ -40,10 +40,13 @@ export default function FeatureSection() {
   const isInView = useInView(ref);
 
   return (
-    <section id="features" aria-labelledby="features">
+    <section id="features" aria-labelledby="features-heading">
       <div className="flex min-h-screen justify-center px-6 py-8 md:items-center lg:px-8">
         <div className="flex max-w-7xl flex-col items-center justify-center">
-          <h2 className="text-base font-semibold text-neon-pink">
+          <h2
+            id="features-heading"
+            className="text-base font-semibold text-neon-pink"
+          >
             Cechy produktu
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
@@ -56,6 +59,7 @@ export default function FeatureSection() {
           <div
             ref={ref}
             className="mt-10 max-w-2xl sm:mt-20 md:mt-16 lg:mt-24 lg:max-w-4xl"
+            aria-live="polite"
           >
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {features.map((feature, index) => (

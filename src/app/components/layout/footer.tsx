@@ -84,7 +84,11 @@ export const Footer: FC = () => {
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6">
-              <Link href={item.href} className="text-sm hover:text-neon-pink">
+              <Link
+                href={item.href}
+                className="text-sm hover:text-neon-pink"
+                aria-label={`Navigate to ${item.name}`}
+              >
                 {item.name}
               </Link>
             </div>
@@ -96,6 +100,7 @@ export const Footer: FC = () => {
               key={item.name}
               href={item.href}
               className="text-neon-pink hover:text-neon-pink-dark"
+              aria-label={`Visit our ${item.name} page`}
             >
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="size-6" />
