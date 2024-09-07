@@ -50,14 +50,19 @@ const products = [
 
 export default function BestsellersSection() {
   return (
-    <section id="bestsellers" aria-labelledby="bestsellers">
+    <section id="bestsellers" aria-labelledby="bestsellers-heading">
       <div className="mx-auto max-w-7xl items-center px-6 py-16 pb-10 md:min-h-screen md:py-10 md:pt-28">
-        <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2
+          id="bestsellers-heading"
+          className="text-center text-3xl font-bold tracking-tight sm:text-4xl"
+        >
           Nasze <span className="text-white-glow uppercase">bestsellery</span>
         </h2>
         <ProductList products={products} />
         <div className="mt-14 flex justify-around">
-          <button className="neon-button">Sprawdź sklep</button>
+          <button className="neon-button" aria-label="Sprawdź sklep">
+            Sprawdź sklep
+          </button>
         </div>
       </div>
     </section>

@@ -51,7 +51,7 @@ const settings = {
 
 const ProductList: FC<ProductListProps> = ({ products }) => {
   return (
-    <ul className="mt-8 sm:mt-12">
+    <ul className="mt-8 sm:mt-12" aria-live="polite">
       <Slider {...settings}>
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />

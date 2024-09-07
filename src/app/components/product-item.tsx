@@ -16,10 +16,14 @@ export const ProductItem: FC<ProductItemProps> = ({
   product: { title, imageUrl, price },
 }) => {
   return (
-    <li className="cursor-pointer p-4 transition-transform duration-300 ease-in-out hover:scale-105">
+    <li
+      className="cursor-pointer p-4 transition-transform duration-300 ease-in-out hover:scale-105"
+      aria-label={`Product: ${title}, Price: ${price}`}
+    >
       <div
         className="h-80 rounded-2xl bg-cover bg-center bg-no-repeat object-cover"
         style={{ backgroundImage: `url(${imageUrl})` }}
+        aria-hidden="true"
       />
 
       <p className="mt-2 text-base">

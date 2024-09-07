@@ -5,14 +5,14 @@ import dynamic from "next/dynamic";
 // );
 // const FeatureSection = dynamic(() => import("./sections/feature-section"));
 const HeroSection = dynamic(() => import("./sections/hero-section"));
-// const ProductSection = dynamic(() => import("./sections/product-section"));
+const ProductSection = dynamic(() => import("./sections/product-section"));
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      {/* <ProductSection />
-      <CustomOrderSection />
+      <ProductSection />
+      {/* <CustomOrderSection />
       <FeatureSection /> */}
     </>
   );
