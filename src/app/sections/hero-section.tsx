@@ -4,10 +4,11 @@ import { HeroImages } from "../components/client/hero-images";
 
 export default function HeroSection() {
   return (
-    <section id="hero" aria-labelledby="hero">
+    <section id="hero" aria-labelledby="hero-title">
       <div className="isolate mx-auto flex min-h-screen max-w-7xl flex-row px-6 py-36 md:items-center md:pb-0 md:pt-16">
         <div className="lg:max-w-2xl">
           <motion.h1
+            id="hero-title"
             className="text-4xl font-bold tracking-tight lg:text-6xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -27,6 +28,7 @@ export default function HeroSection() {
           </motion.p>
           <div className="mt-10 flex items-center gap-x-6">
             <motion.a
+              aria-label="Sprawdź nasze produkty"
               href="#bestsellers"
               className="neon-button-shade"
               initial={{ opacity: 0 }}

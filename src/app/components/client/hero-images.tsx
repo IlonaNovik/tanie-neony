@@ -7,12 +7,16 @@ import { HeroImage } from "../hero-image";
 
 export const HeroImages: React.FC = () => {
   return (
-    <div className="flex justify-end gap-8">
+    <div
+      className="flex justify-end gap-8"
+      role="img"
+      aria-label="Hero images of neon signs"
+    >
       <div className="w-20 flex-none space-y-8 pt-80 md:w-28 lg:w-40">
         <HeroImage
           image={{
             src: ImgBalloonDog.src,
-            alt: "balloon-dog-neon-sign",
+            alt: "Balloon dog neon sign",
           }}
         />
       </div>
@@ -20,14 +24,14 @@ export const HeroImages: React.FC = () => {
         <HeroImage
           image={{
             src: ImgDj.src,
-            alt: "dj-girl-neon-sign",
+            alt: "DJ girl neon sign",
           }}
         />
 
         <HeroImage
           image={{
             src: ImgPurpleSkullHead.src,
-            alt: "purple-skull-head-neon-sign",
+            alt: "Purple skull head neon sign",
           }}
         />
       </div>
@@ -36,14 +40,14 @@ export const HeroImages: React.FC = () => {
         <HeroImage
           image={{
             src: ImgUfo.src,
-            alt: "ufo-neon-sign",
+            alt: "UFO neon sign",
           }}
         />
 
         <HeroImage
           image={{
             src: ImgMexicanFood.src,
-            alt: "mexican-food-neon-sign",
+            alt: "Mexican food neon sign",
           }}
         />
       </div>

@@ -22,11 +22,13 @@ export const Navigation: React.FC<NavigationProps> = ({
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <div className="flex lg:flex-1">
         <Link href="/">
           <span className="sr-only">Your Company</span>
-          <Image alt="logo" src={logo} width={32} height={32} />
+          <Image alt="Company logo" src={logo} width={32} height={32} />
         </Link>
       </div>
       <div className="flex lg:hidden">
@@ -34,6 +36,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           type="button"
           onClick={() => setMobileMenuOpen(true)}
           className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+          aria-label="Open main menu"
         >
           <span className="sr-only">Open main menu</span>
           <Bars3Icon aria-hidden="true" className="size-6" />
@@ -45,13 +48,19 @@ export const Navigation: React.FC<NavigationProps> = ({
             key={item.name}
             className={`neon-button-nav ${pathname === item.href ? "active" : ""}`}
             href={item.href}
+            aria-current={pathname === item.href ? "page" : undefined}
           >
             {item.name}
           </Link>
         ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <Link href="#" className="neon-button-nav !p-2" title="Shopping Cart">
+        <Link
+          href="#"
+          className="neon-button-nav !p-2"
+          title="Shopping Cart"
+          aria-label="Shopping Cart"
+        >
           <ShoppingCartIcon className="size-6" />
         </Link>
       </div>

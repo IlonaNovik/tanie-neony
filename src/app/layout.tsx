@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="pl">
       <body className={inter.className}>
         <Header />
-        <main>{children}</main>
+        <main role="main">{children}</main>
         <Footer />
       </body>
     </html>
