@@ -51,13 +51,13 @@ const settings = {
 
 const ProductList: FC<ProductListProps> = ({ products }) => {
   return (
-    <ul className="mt-8 sm:mt-12" aria-live="polite">
-      <Slider {...settings}>
+    <div className="mt-8 sm:mt-12" aria-live="polite">
+      <Slider {...settings} accessibility>
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
       </Slider>
-    </ul>
+    </div>
   );
 };
 

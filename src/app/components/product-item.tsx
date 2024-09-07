@@ -16,7 +16,7 @@ export const ProductItem: FC<ProductItemProps> = ({
   product: { title, imageUrl, price },
 }) => {
   return (
-    <li
+    <div
       className="cursor-pointer p-4 transition-transform duration-300 ease-in-out hover:scale-105"
       aria-label={`Product: ${title}, Price: ${price}`}
     >
@@ -30,6 +30,6 @@ export const ProductItem: FC<ProductItemProps> = ({
         od <span className="font-bold text-neon-pink">{price}</span>
       </p>
       <h3 className="mt-2 text-lg font-semibold uppercase">{title}</h3>
-    </li>
+    </div>
   );
 };
