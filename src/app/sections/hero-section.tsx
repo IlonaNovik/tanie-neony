@@ -7,16 +7,16 @@ export default function HeroSection() {
     <section id="hero" aria-labelledby="hero-title">
       <div className="isolate mx-auto flex min-h-screen max-w-7xl flex-row px-6 py-36 md:items-center md:pb-0 md:pt-16">
         <div className="lg:max-w-2xl">
-          <motion.h1
+          <h1
             id="hero-title"
             className="text-4xl font-bold tracking-tight lg:text-6xl"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ duration: 1 }}
           >
             <span className="text-white-glow">Neony</span> na zamówienie w
             przystępnej cenie
-          </motion.h1>
+          </h1>
           <motion.p
             className="mt-6 max-w-none text-base md:text-lg"
             initial={{ opacity: 0 }}

@@ -10,6 +10,7 @@ interface FormFieldProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export const FormField: React.FC<FormFieldProps> = (props) => {
   const { name, label, required, error, children } = props;
+  const errorId = `${name}-error`;
 
   return (
     <div {...props}>
@@ -22,9 +23,11 @@ export const FormField: React.FC<FormFieldProps> = (props) => {
       </label>
 
       <p
+        id={errorId}
         className={cn("h-4 text-sm text-error-red block", {
           "opacity-0": !error,
         })}
+        aria-live="assertive"
       >
         {error?.message}
       </p>

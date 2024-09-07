@@ -44,8 +44,12 @@ export const ContactForm = () => {
     <form
       className="w-full px-6 py-10 md:w-max md:pt-32 lg:px-8"
       onSubmit={handleSubmit(onSubmit)}
+      aria-labelledby="contact-form-heading"
     >
       <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+        <h2 id="contact-form-heading" className="sr-only">
+          Contact Form
+        </h2>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <FormField
             name="firstName"
@@ -58,6 +62,8 @@ export const ContactForm = () => {
               type="text"
               autoComplete="given-name"
               placeholder="Jan"
+              aria-required="true"
+              aria-invalid={errors.firstName ? "true" : "false"}
               {...register("firstName", { required: true })}
             />
           </FormField>
@@ -72,6 +78,8 @@ export const ContactForm = () => {
               type="text"
               autoComplete="family-name"
               placeholder="Kowalski"
+              aria-required="true"
+              aria-invalid={errors.lastName ? "true" : "false"}
               {...register("lastName", { required: true })}
             />
           </FormField>
@@ -82,6 +90,8 @@ export const ContactForm = () => {
                 type="email"
                 autoComplete="email"
                 placeholder="jan.kowalski@gmail.com"
+                aria-required="true"
+                aria-invalid={errors.email ? "true" : "false"}
                 {...register("email", { required: true })}
               />
             </FormField>
@@ -95,10 +105,12 @@ export const ContactForm = () => {
             >
               <Input
                 id="phone-number"
-                name="phone-number"
                 type="tel"
                 autoComplete="tel"
                 placeholder="+48 123 456 789"
+                aria-required="true"
+                aria-invalid={errors.phoneNumber ? "true" : "false"}
+                {...register("phoneNumber", { required: true })}
               />
             </FormField>
           </div>
@@ -113,13 +125,19 @@ export const ContactForm = () => {
                 id="message"
                 rows={4}
                 placeholder="Wpisz swoją wiadomość..."
+                aria-required="true"
+                aria-invalid={errors.message ? "true" : "false"}
                 {...register("message", { required: true })}
               />
             </FormField>
           </div>
         </div>
         <div className="mt-8 flex justify-end">
-          <button type="submit" className="neon-button">
+          <button
+            type="submit"
+            className="neon-button"
+            aria-label="Wyślij formularz"
+          >
             Wyślij
           </button>
         </div>
