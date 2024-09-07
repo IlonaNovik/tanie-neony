@@ -1,4 +1,11 @@
 import dynamic from "next/dynamic";
+
+import ImgLightening from "../assets/images/lightning.webp";
+import ImgLips from "../assets/images/lips.webp";
+import ImgMountains from "../assets/images/mountain.webp";
+import ImgMrPackman from "../assets/images/packman.webp";
+import ImgWoman from "../assets/images/woman.webp";
+
 const ProductList = dynamic(() => import("../components/product-list"), {
   ssr: false,
 });
@@ -8,40 +15,35 @@ const products = [
     id: 1,
     title: "Błyskawica",
     href: "#",
-    imageUrl:
-      "https://i.pinimg.com/474x/1b/c8/3b/1bc83b10442340e07b91b4402e246ccf.jpg",
+    imageUrl: ImgLightening.src,
     price: "200 zł",
   },
   {
     id: 2,
     title: "Góry",
     href: "#",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTrN5NpKVnSC8HghCPBbBQnFic9n65kGFTA&s",
+    imageUrl: ImgMountains.src,
     price: "200 zł",
   },
   {
     id: 3,
     title: "Kobieta",
     href: "#",
-    imageUrl:
-      "https://neoneffect.co.uk/cdn/shop/collections/Hero_Banner_1024x1024.jpg?v=1680242594",
+    imageUrl: ImgWoman.src,
     price: "200 zł",
   },
   {
     id: 4,
     title: "Mr. Packman",
     href: "#",
-    imageUrl:
-      "https://gdziejestneon.com/wp-content/uploads/2023/06/neon-led-pac-man-gdzie-jest-neon-com.webp",
+    imageUrl: ImgMrPackman.src,
     price: "200 zł",
   },
   {
     id: 5,
     title: "Usta",
     href: "#",
-    imageUrl:
-      "https://totheneon.com/wp-content/uploads/2022/07/IMG_0095_Easy-Resize.com-1.jpg",
+    imageUrl: ImgLips.src,
     price: "200 zł",
   },
 ];
