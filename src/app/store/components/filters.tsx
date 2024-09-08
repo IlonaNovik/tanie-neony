@@ -49,7 +49,7 @@ export const Filters: React.FC = () => {
         </div>
       </div>
       <div className="flex items-center divide-x divide-lavender bg-neon-purple/50 px-3 py-4">
-        <span className="pr-5">Filters</span>
+        <span className="pr-5">Filtry</span>
         <div className="pl-5">
           <Badge label="Jedzenie" aria-label="Filter: Jedzenie" />
         </div>
