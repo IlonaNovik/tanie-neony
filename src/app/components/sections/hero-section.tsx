@@ -1,6 +1,6 @@
 import * as motion from "framer-motion/client";
 
-import { HeroImages } from "../components/client/hero-images";
+import { HeroImages } from "../client/hero-images";
 
 export default function HeroSection() {
   return (

@@ -1,12 +1,12 @@
 import dynamic from "next/dynamic";
 
-import ImgLightening from "../assets/images/lightning.webp";
-import ImgLips from "../assets/images/lips.webp";
-import ImgMountains from "../assets/images/mountain.webp";
-import ImgMrPackman from "../assets/images/packman.webp";
-import ImgWoman from "../assets/images/woman.webp";
+import ImgLightening from "../../assets/images/lightning.webp";
+import ImgLips from "../../assets/images/lips.webp";
+import ImgMountains from "../../assets/images/mountain.webp";
+import ImgMrPackman from "../../assets/images/packman.webp";
+import ImgWoman from "../../assets/images/woman.webp";
 
-const ProductList = dynamic(() => import("../components/product-list"), {
+const ProductList = dynamic(() => import("../product-list"), {
   ssr: false,
 });
 
