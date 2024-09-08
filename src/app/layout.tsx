@@ -11,16 +11,17 @@ const inter = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Tanie neony",
+  title: "Neony wysokiej jakości na zamówienie w świetnych cenach",
   description:
-    "Dobrej jakości neony na zamówienie w przystępnej cenie. Duży wybór kolorów i kształtów. Moliwość personalizacji. Stwórz swój własny neon już dziś!",
-  viewport: "width=device-width, initial-scale=1.0",
+    "Oferujemy wysokiej jakości neony na zamówienie w świetnych cenach. Duży wybór kolorów i kształtów. Możliwość personalizacji. Zamów już dziś!",
   keywords:
-    "neony, neony na zamówienie, tanie neony, neony personalizowane, neony led, neony led na zamówienie, neony led personalizowane",
+    "neony, neony na zamówienie, tanie neony, neony personalizowane, neony LED, neony LED na zamówienie, personalizowane neony LED, wysokiej jakości neony, przystępne cenowo neony, dekoracyjne neony, neony do wnętrz, neony na prezent",
   openGraph: {
+    type: "website",
     title: "Tanie neony",
     description:
       "Dobrej jakości neony na zamówienie w przystępnej cenie. Duży wybór kolorów i kształtów. Moliwość personalizacji. Stwórz swój własny neon już dziś!",
+    url: "./assets/images/mexican-food.webp",
   },
 };
 
@@ -30,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
+    <html lang="pl" suppressHydrationWarning>
       <body className={inter.className}>
         <Header />
         <main role="main">{children}</main>
