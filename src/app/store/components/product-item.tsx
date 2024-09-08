@@ -30,10 +30,10 @@ export const ProductItem: FC<ProductItemProps> = ({
           aria-hidden="true"
         />
 
-        <p className="mt-2 text-base">
+        <p className="mt-2 text-sm">
           od <span className="font-bold text-neon-pink">{price}</span>
         </p>
-        <h3 className="mt-2 text-lg font-semibold uppercase">{title}</h3>
+        <h3 className="mt-2 text-sm font-semibold uppercase">{title}</h3>
       </Link>
     </li>
   );

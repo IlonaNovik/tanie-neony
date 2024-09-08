@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 import ImgLightening from "../../assets/images/lightning.webp";
 import ImgLips from "../../assets/images/lips.webp";
@@ -60,9 +61,13 @@ export default function BestsellersSection() {
         </h2>
         <ProductList products={products} />
         <div className="mt-14 flex justify-around">
-          <button className="neon-button" aria-label="Sprawdź sklep">
+          <Link
+            href="/store"
+            className="neon-button"
+            aria-label="Sprawdź sklep"
+          >
             Sprawdź sklep
-          </button>
+          </Link>
         </div>
       </div>
     </section>
