@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="pl" suppressHydrationWarning>
       <body className={inter.className}>
         <Header />
-        <main role="main">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

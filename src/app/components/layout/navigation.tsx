@@ -22,7 +22,6 @@ export const Navigation: React.FC<NavigationProps> = ({
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      role="navigation"
       aria-label="Main Navigation"
     >
       <div className="flex lg:flex-1">
