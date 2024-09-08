@@ -8,6 +8,9 @@ import { Footer } from "./components/layout/footer";
 
 const inter = Nunito({
   subsets: ["latin"],
+  variable: "--font-roboto",
+  preload: true,
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
     "neony, neony na zamówienie, tanie neony, neony personalizowane, neony LED, neony LED na zamówienie, personalizowane neony LED, wysokiej jakości neony, przystępne cenowo neony, dekoracyjne neony, neony do wnętrz, neony na prezent",
   openGraph: {
     type: "website",
-    title: "Tanie neony",
+    title: "Neony wysokiej jakości na zamówienie w świetnych cenach",
     description:
       "Dobrej jakości neony na zamówienie w przystępnej cenie. Duży wybór kolorów i kształtów. Moliwość personalizacji. Stwórz swój własny neon już dziś!",
     url: "./assets/images/mexican-food.webp",
