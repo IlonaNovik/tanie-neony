@@ -3,19 +3,19 @@ import { Dropdown } from "@/app/components/dropdown";
 
 const sortVariants = [
   {
-    name: "Price: Low to High",
+    name: "Cena: Od najniższej",
     value: "price-asc",
   },
   {
-    name: "Price: High to Low",
+    name: "Cena: Od najwyższej",
     value: "price-desc",
   },
   {
-    name: "Newest Arrivals",
+    name: "Nowości",
     value: "newest",
   },
   {
-    name: "Best Sellers",
+    name: "Bestsellery",
     value: "best-sellers",
   },
 ];
@@ -23,37 +23,35 @@ const sortVariants = [
 export const Filters: React.FC = () => {
   return (
     <section id="filters" aria-labelledby="filters-heading">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
-        <div className="flex items-center justify-between border-b border-lavender/70">
+      <div className="flex items-center justify-between border-b border-lavender/70">
+        <Dropdown
+          title="Sortuj"
+          position="left"
+          items={sortVariants}
+          aria-labelledby="sort-dropdown"
+        />
+        <div className="flex gap-2">
           <Dropdown
-            title="Sortuj po"
-            position="left"
+            title={
+              <>
+                Kategoria
+                <span className="text-neon-pink">(1)</span>
+              </>
+            }
             items={sortVariants}
-            aria-labelledby="sort-dropdown"
+            aria-labelledby="category-dropdown"
           />
-          <div className="flex gap-2">
-            <Dropdown
-              title={
-                <>
-                  Kategoria
-                  <span className="text-neon-pink">(1)</span>
-                </>
-              }
-              items={sortVariants}
-              aria-labelledby="category-dropdown"
-            />
-            <Dropdown
-              title="Kolor"
-              items={sortVariants}
-              aria-labelledby="color-dropdown"
-            />
-          </div>
+          <Dropdown
+            title="Kolor"
+            items={sortVariants}
+            aria-labelledby="color-dropdown"
+          />
         </div>
-        <div className="flex items-center divide-x divide-lavender bg-neon-purple/50 px-3 py-4">
-          <span className="pr-5">Filters</span>
-          <div className="pl-5">
-            <Badge label="Jedzenie" aria-label="Filter: Jedzenie" />
-          </div>
+      </div>
+      <div className="flex items-center divide-x divide-lavender bg-neon-purple/50 px-3 py-4">
+        <span className="pr-5">Filters</span>
+        <div className="pl-5">
+          <Badge label="Jedzenie" aria-label="Filter: Jedzenie" />
         </div>
       </div>
     </section>
