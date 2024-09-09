@@ -1,15 +1,10 @@
 import { FC } from "react";
 
 import { ProductItem } from "./product-item";
+import { Product } from "../sections/products";
 
 interface ProductListProps {
-  products: {
-    id: number;
-    title: string;
-    imageUrl: string;
-    price: string;
-    href: string;
-  }[];
+  products: Product[];
 }
 
 const ProductList: FC<ProductListProps> = ({ products }) => {

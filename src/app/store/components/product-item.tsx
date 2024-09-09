@@ -1,14 +1,10 @@
 import Link from "next/link";
 import { FC } from "react";
 
+import { Product } from "../sections/products";
+
 interface ProductItemProps {
-  product: {
-    id: number;
-    title: string;
-    imageUrl: string;
-    price: string;
-    href: string;
-  };
+  product: Product;
 }
 
 export const ProductItem: FC<ProductItemProps> = ({
