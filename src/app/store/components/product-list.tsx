@@ -10,7 +10,7 @@ interface ProductListProps {
 const ProductList: FC<ProductListProps> = ({ products }) => {
   return (
     <ul
-      className="mb-10 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6"
+      className="mb-10 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5"
       aria-live="polite"
       aria-label="Product List"
     >
