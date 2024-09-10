@@ -18,10 +18,7 @@ export const ContactDetails = () => {
             skontaktuj się z nami. Jesteśmy dostępni od poniedziałku do piątku w
             godzinach 9:00-17:00.
           </p>
-          <dl
-            className="mt-10 grid grid-cols-12 items-center gap-4  text-base"
-            role="list"
-          >
+          <dl className="mt-10 grid grid-cols-12 items-center gap-4  text-base">
             <dt className="col-span-1 flex-none">
               <span className="sr-only">Telefon</span>
               <PhoneIcon
