@@ -1,5 +1,7 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
+import { ReactComponent as WhatsAppIcon } from "../../assets/icons/whatsapp.svg";
+
 export const ContactDetails = () => {
   return (
     <section id="contact-details" aria-labelledby="contact-details-heading">
@@ -16,43 +18,58 @@ export const ContactDetails = () => {
             skontaktuj się z nami. Jesteśmy dostępni od poniedziałku do piątku w
             godzinach 9:00-17:00.
           </p>
-          <dl className="mt-10 space-y-4 text-base" role="list">
-            <div className="flex gap-x-4" role="listitem">
-              <dt className="flex-none">
-                <span className="sr-only">Telefon</span>
-                <PhoneIcon
-                  aria-hidden="true"
-                  className="h-7 w-6 text-neon-pink"
-                />
-              </dt>
-              <dd>
-                <a
-                  href="tel:+1 (555) 234-5678"
-                  className="hover:text-neon-pink"
-                  aria-label="Call +1 (555) 234-5678"
-                >
-                  +1 (555) 234-5678
-                </a>
-              </dd>
-            </div>
-            <div className="flex gap-x-4" role="listitem">
-              <dt className="flex-none">
-                <span className="sr-only">Email</span>
-                <EnvelopeIcon
-                  aria-hidden="true"
-                  className="h-7 w-6 text-neon-pink"
-                />
-              </dt>
-              <dd>
-                <a
-                  href="mailto:hello@example.com"
-                  className="hover:text-neon-pink"
-                  aria-label="Send email to hello@example.com"
-                >
-                  hello@example.com
-                </a>
-              </dd>
-            </div>
+          <dl
+            className="mt-10 grid grid-cols-12 items-center gap-4  text-base"
+            role="list"
+          >
+            <dt className="col-span-1 flex-none">
+              <span className="sr-only">Telefon</span>
+              <PhoneIcon
+                aria-hidden="true"
+                className="h-7 w-6 text-neon-pink"
+              />
+            </dt>
+            <dd className="col-span-11">
+              <a
+                href="tel:+48 501 762 076"
+                className="hover:text-neon-pink"
+                aria-label="Call +48 501 762 076"
+              >
+                +48 501 762 076
+              </a>
+            </dd>
+            <dt className="col-span-1 flex-none">
+              <span className="sr-only">Whatsapp</span>
+              <WhatsAppIcon
+                aria-hidden="true"
+                className="h-7 w-6 text-neon-pink"
+              />
+            </dt>
+            <dd className="col-span-11">
+              <a
+                href="https://wa.me/48501762076"
+                className="hover:text-neon-pink"
+                aria-label="Chat on WhatsApp"
+              >
+                +48 501 762 076
+              </a>
+            </dd>
+            <dt className="col-span-1 flex-none">
+              <span className="sr-only">Email</span>
+              <EnvelopeIcon
+                aria-hidden="true"
+                className="h-7 w-6 text-neon-pink"
+              />
+            </dt>
+            <dd className="col-span-11">
+              <a
+                href="mailto:sprzedaz@futurumrk.pl"
+                className="hover:text-neon-pink"
+                aria-label="Send email to sprzedaz@futurumrk.pl"
+              >
+                sprzedaz@futurumrk.pl
+              </a>
+            </dd>
           </dl>
         </div>
       </div>

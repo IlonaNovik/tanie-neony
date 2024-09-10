@@ -8,7 +8,7 @@ interface BadgeProps {
 export const Badge: FC<BadgeProps> = ({ label }) => {
   return (
     <>
-      <span className="inline-flex items-center gap-x-0.5 rounded-md bg-neon-pink px-2 py-1 text-sm font-medium uppercase">
+      <span className="inline-flex items-center gap-x-0.5 rounded-md bg-neon-pink px-2 py-1 text-sm font-bold uppercase text-black">
         {label}
         <button
           type="button"

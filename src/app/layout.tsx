@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
+
 import { Header } from "@/app/components/layout";
 
 import { Footer } from "./components/layout/footer";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Nunito({
   subsets: ["latin"],
@@ -36,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="pl" suppressHydrationWarning>
       <body className={inter.className}>
+        <ToastContainer autoClose={false} theme="dark" />
         <Header />
         <main>{children}</main>
         <Footer />

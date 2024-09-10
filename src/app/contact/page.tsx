@@ -3,6 +3,19 @@ import { ContactForm } from "./components/contact-form";
 import ImgNeonCityMob from "../assets/images/neon-city-mob.webp";
 import ImgNeonCity from "../assets/images/neon-city.webp";
 
+export const metadata = {
+  title: "Kontakt",
+  description:
+    "Skontaktuj się z nami, aby dowiedzieć się więcej o naszych produktach i usługach.",
+  keywords: "kontakt, skontaktuj się, produkty, usługi, informacje, kontaktowe",
+  openGraph: {
+    type: "website",
+    title: "Kontakt",
+    description:
+      "Skontaktuj się z nami, aby dowiedzieć się więcej o naszych produktach i usługach.",
+  },
+};
+
 export default function Contact() {
   return (
     <section id="contact">

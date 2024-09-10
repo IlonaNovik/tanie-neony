@@ -1,8 +1,12 @@
 "use client";
 
 import { yupResolver } from "@hookform/resolvers/yup";
+import { init, send } from "emailjs-com";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import * as yup from "yup";
+
+import { Loader } from "@/app/components/loader";
 
 import { FormField } from "./form-field";
 import { Input } from "./input";
@@ -15,7 +19,7 @@ const schema = yup.object().shape({
     .string()
     .email("Niepoprawny adres email.")
     .required("Email jest wymagany."),
-  phoneNumber: yup.string().required("Numer telefonu jest wymagany."),
+  phone: yup.string(),
   message: yup.string().required("Wiadomość jest wymagana."),
 });
 
@@ -23,7 +27,7 @@ interface ContactForm {
   firstName: string;
   lastName: string;
   email: string;
-  phoneNumber: string;
+  phone?: string;
   message: string;
 }
 
@@ -31,13 +35,41 @@ export const ContactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitting },
   } = useForm<ContactForm>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data: ContactForm) => {
-    return data;
+  const onSubmit = async ({
+    firstName,
+    lastName,
+    message,
+    email,
+    phone,
+  }: ContactForm) => {
+    const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
+    const userId = process.env.NEXT_PUBLIC_EMAIL_USER_ID;
+
+    if (serviceId && templateId && userId) {
+      try {
+        init(userId);
+        await send(serviceId, templateId, {
+          from_name: `${firstName} ${lastName}`,
+          message,
+          phone,
+          reply_to: email,
+        });
+      } catch (err) {
+        toast.error(
+          "Wystąpił błąd podczas wysyłania wiadomości, spróbuj ponownie.",
+        );
+      } finally {
+        toast.info("Wiadość została wysłana!");
+        reset();
+      }
+    }
   };
 
   return (
@@ -97,20 +129,14 @@ export const ContactForm = () => {
             </FormField>
           </div>
           <div className="sm:col-span-2">
-            <FormField
-              name="phoneNumber"
-              label="Numer telefonu"
-              required
-              error={errors.phoneNumber}
-            >
+            <FormField name="phone" label="Numer telefonu">
               <Input
                 id="phone-number"
                 type="tel"
                 autoComplete="tel"
                 placeholder="+48 123 456 789"
-                aria-required="true"
-                aria-invalid={errors.phoneNumber ? "true" : "false"}
-                {...register("phoneNumber", { required: true })}
+                aria-required="false"
+                {...register("phone")}
               />
             </FormField>
           </div>
@@ -135,10 +161,11 @@ export const ContactForm = () => {
         <div className="mt-8 flex justify-end">
           <button
             type="submit"
-            className="neon-button"
+            className="neon-button flex w-32 items-center justify-center"
             aria-label="Wyślij formularz"
+            disabled={isSubmitting}
           >
-            Wyślij
+            {isSubmitting ? <Loader width="28" /> : "Wyślij"}
           </button>
         </div>
       </div>
