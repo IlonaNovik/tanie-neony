@@ -29,7 +29,7 @@ const CustomOrderImage: React.FC = () => {
               ? { filter: "grayscale(0%)" }
               : { filter: "grayscale(100%)" }
           }
-          transition={{ duration: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
           loading="lazy"
         />
       </picture>

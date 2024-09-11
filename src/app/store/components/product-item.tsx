@@ -8,7 +8,7 @@ interface ProductItemProps {
 }
 
 export const ProductItem: FC<ProductItemProps> = ({
-  product: { title, imageUrl, price },
+  product: { title, imageUrl, price, slug },
 }) => {
   return (
     <li
@@ -16,7 +16,7 @@ export const ProductItem: FC<ProductItemProps> = ({
       aria-label={`Product: ${title}, Price: ${price}`}
     >
       <Link
-        href="#" //"/product/[id]"
+        href={`/store/products/${slug}`}
         className="block"
         aria-label={`Product: ${title}, Price: ${price}`}
       >

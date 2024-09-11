@@ -51,6 +51,7 @@ import ImgYoga3 from "../../assets/images/yoga-3.webp";
 
 export interface Product {
   id: number;
+  slug: string;
   title: string;
   imageUrl: string;
   price: string;
@@ -60,6 +61,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 1,
+    slug: "bottle-1",
     title: "Bottle 1",
     href: "#",
     imageUrl: ImgBottle1.src,
@@ -67,6 +69,7 @@ export const products: Product[] = [
   },
   {
     id: 2,
+    slug: "bottle-2",
     title: "Bottle 2",
     href: "#",
     imageUrl: ImgBottle2.src,
@@ -74,6 +77,7 @@ export const products: Product[] = [
   },
   {
     id: 3,
+    slug: "bottle-3",
     title: "Bottle 3",
     href: "#",
     imageUrl: ImgBottle3.src,
@@ -81,6 +85,7 @@ export const products: Product[] = [
   },
   {
     id: 4,
+    slug: "bottle-4",
     title: "Bottle 4",
     href: "#",
     imageUrl: ImgBottle4.src,
@@ -88,6 +93,7 @@ export const products: Product[] = [
   },
   {
     id: 5,
+    slug: "cola-1",
     title: "Cola 1",
     href: "#",
     imageUrl: ImgCola1.src,
@@ -95,6 +101,7 @@ export const products: Product[] = [
   },
   {
     id: 6,
+    slug: "cola-2",
     title: "Cola 2",
     href: "#",
     imageUrl: ImgCola2.src,
@@ -102,6 +109,7 @@ export const products: Product[] = [
   },
   {
     id: 7,
+    slug: "cola-3",
     title: "Cola 3",
     href: "#",
     imageUrl: ImgCola3.src,
@@ -109,6 +117,7 @@ export const products: Product[] = [
   },
   {
     id: 8,
+    slug: "cola-4",
     title: "Cola 4",
     href: "#",
     imageUrl: ImgCola4.src,
@@ -116,6 +125,7 @@ export const products: Product[] = [
   },
   {
     id: 9,
+    slug: "glass-1",
     title: "Glass 1",
     href: "#",
     imageUrl: ImgGlass1.src,
@@ -123,6 +133,7 @@ export const products: Product[] = [
   },
   {
     id: 10,
+    slug: "glass-2",
     title: "Glass 2",
     href: "#",
     imageUrl: ImgGlass2.src,
@@ -130,6 +141,7 @@ export const products: Product[] = [
   },
   {
     id: 11,
+    slug: "glass-3",
     title: "Glass 3",
     href: "#",
     imageUrl: ImgGlass3.src,
@@ -137,6 +149,7 @@ export const products: Product[] = [
   },
   {
     id: 13,
+    slug: "shape-1",
     title: "Shape 1",
     href: "#",
     imageUrl: ImgShape1.src,
@@ -144,6 +157,7 @@ export const products: Product[] = [
   },
   {
     id: 14,
+    slug: "shape-2",
     title: "Shape 2",
     href: "#",
     imageUrl: ImgShape2.src,
@@ -151,6 +165,7 @@ export const products: Product[] = [
   },
   {
     id: 15,
+    slug: "shape-3",
     title: "Shape 3",
     href: "#",
     imageUrl: ImgShape3.src,
@@ -158,6 +173,7 @@ export const products: Product[] = [
   },
   {
     id: 16,
+    slug: "shape-4",
     title: "Shape 4",
     href: "#",
     imageUrl: ImgShape4.src,
@@ -165,6 +181,7 @@ export const products: Product[] = [
   },
   {
     id: 17,
+    slug: "shape-5",
     title: "Shape 5",
     href: "#",
     imageUrl: ImgShape5.src,
@@ -172,6 +189,7 @@ export const products: Product[] = [
   },
   {
     id: 18,
+    slug: "shell-1",
     title: "Shell 1",
     href: "#",
     imageUrl: ImgShell1.src,
@@ -179,6 +197,7 @@ export const products: Product[] = [
   },
   {
     id: 19,
+    slug: "shell-2",
     title: "Shell 2",
     href: "#",
     imageUrl: ImgShell2.src,
@@ -186,6 +205,7 @@ export const products: Product[] = [
   },
   {
     id: 20,
+    slug: "tv-1",
     title: "TV 1",
     href: "#",
     imageUrl: ImgTv1.src,
@@ -193,6 +213,7 @@ export const products: Product[] = [
   },
   {
     id: 21,
+    slug: "tv-2",
     title: "TV 2",
     href: "#",
     imageUrl: ImgTv2.src,
@@ -200,6 +221,7 @@ export const products: Product[] = [
   },
   {
     id: 22,
+    slug: "cupcake-1",
     title: "Cupcake 1",
     href: "#",
     imageUrl: ImgCupcake1.src,
@@ -207,6 +229,7 @@ export const products: Product[] = [
   },
   {
     id: 23,
+    slug: "dragon-1",
     title: "Dragon 1",
     href: "#",
     imageUrl: ImgDragon1.src,
@@ -214,6 +237,7 @@ export const products: Product[] = [
   },
   {
     id: 24,
+    slug: "dragon-2",
     title: "Dragon 2",
     href: "#",
     imageUrl: ImgDragon2.src,
@@ -221,6 +245,7 @@ export const products: Product[] = [
   },
   {
     id: 25,
+    slug: "dragon-3",
     title: "Dragon 3",
     href: "#",
     imageUrl: ImgDragon3.src,
@@ -228,6 +253,7 @@ export const products: Product[] = [
   },
   {
     id: 26,
+    slug: "mushroom-1",
     title: "Mushroom 1",
     href: "#",
     imageUrl: ImgMushroom1.src,
@@ -235,6 +261,7 @@ export const products: Product[] = [
   },
   {
     id: 27,
+    slug: "mushroom-2",
     title: "Mushroom 2",
     href: "#",
     imageUrl: ImgMushroom2.src,
@@ -242,6 +269,7 @@ export const products: Product[] = [
   },
   {
     id: 28,
+    slug: "mushroom-3",
     title: "Mushroom 3",
     href: "#",
     imageUrl: ImgMushroom3.src,
@@ -249,6 +277,7 @@ export const products: Product[] = [
   },
   {
     id: 29,
+    slug: "palm-tree-1",
     title: "Palm Tree 1",
     href: "#",
     imageUrl: ImgPalmTree1.src,
@@ -256,6 +285,7 @@ export const products: Product[] = [
   },
   {
     id: 30,
+    slug: "palm-tree-2",
     title: "Palm Tree 2",
     href: "#",
     imageUrl: ImgPalmTree2.src,
@@ -263,6 +293,7 @@ export const products: Product[] = [
   },
   {
     id: 31,
+    slug: "palm-tree-3",
     title: "Palm Tree 3",
     href: "#",
     imageUrl: ImgPalmTree3.src,
@@ -270,6 +301,7 @@ export const products: Product[] = [
   },
   {
     id: 32,
+    slug: "yoga-1",
     title: "Yoga 1",
     href: "#",
     imageUrl: ImgYoga1.src,
@@ -277,6 +309,7 @@ export const products: Product[] = [
   },
   {
     id: 33,
+    slug: "yoga-2",
     title: "Yoga 2",
     href: "#",
     imageUrl: ImgYoga2.src,
@@ -284,6 +317,7 @@ export const products: Product[] = [
   },
   {
     id: 34,
+    slug: "yoga-3",
     title: "Yoga 3",
     href: "#",
     imageUrl: ImgYoga3.src,
@@ -291,6 +325,7 @@ export const products: Product[] = [
   },
   {
     id: 35,
+    slug: "burger-1",
     title: "Burger 1",
     href: "#",
     imageUrl: ImgBurger1.src,
@@ -298,6 +333,7 @@ export const products: Product[] = [
   },
   {
     id: 36,
+    slug: "burger-2",
     title: "Burger 2",
     href: "#",
     imageUrl: ImgBurger2.src,
@@ -305,6 +341,7 @@ export const products: Product[] = [
   },
   {
     id: 37,
+    slug: "burger-3",
     title: "Burger 3",
     href: "#",
     imageUrl: ImgBurger3.src,
@@ -312,6 +349,7 @@ export const products: Product[] = [
   },
   {
     id: 38,
+    slug: "burger-4",
     title: "Burger 4",
     href: "#",
     imageUrl: ImgBurger4.src,
@@ -319,6 +357,7 @@ export const products: Product[] = [
   },
   {
     id: 39,
+    slug: "cocktail-2",
     title: "Cocktail 2",
     href: "#",
     imageUrl: ImgCocktail2.src,
@@ -326,6 +365,7 @@ export const products: Product[] = [
   },
   {
     id: 40,
+    slug: "cocktail-3",
     title: "Cocktail 3",
     href: "#",
     imageUrl: ImgCocktail3.src,
@@ -333,6 +373,7 @@ export const products: Product[] = [
   },
   {
     id: 41,
+    slug: "cocktail-4",
     title: "Cocktail 4",
     href: "#",
     imageUrl: ImgCocktail4.src,
@@ -340,6 +381,7 @@ export const products: Product[] = [
   },
   {
     id: 42,
+    slug: "cocktail-5",
     title: "Cocktail 5",
     href: "#",
     imageUrl: ImgCocktail5.src,
@@ -347,6 +389,7 @@ export const products: Product[] = [
   },
   {
     id: 43,
+    slug: "fruit-1",
     title: "Fruit 1",
     href: "#",
     imageUrl: ImgFruit1.src,
@@ -354,6 +397,7 @@ export const products: Product[] = [
   },
   {
     id: 44,
+    slug: "fruit-2",
     title: "Fruit 2",
     href: "#",
     imageUrl: ImgFruit2.src,
@@ -361,6 +405,7 @@ export const products: Product[] = [
   },
   {
     id: 45,
+    slug: "pineapple-1",
     title: "Pineapple 1",
     href: "#",
     imageUrl: ImgPineapple1.src,
@@ -368,6 +413,7 @@ export const products: Product[] = [
   },
   {
     id: 46,
+    slug: "pineapple-2",
     title: "Pineapple 2",
     href: "#",
     imageUrl: ImgPineapple2.src,
@@ -375,6 +421,7 @@ export const products: Product[] = [
   },
   {
     id: 47,
+    slug: "pineapple-3",
     title: "Pineapple 3",
     href: "#",
     imageUrl: ImgPineapple3.src,
@@ -382,6 +429,7 @@ export const products: Product[] = [
   },
   {
     id: 48,
+    slug: "pineapple-4",
     title: "Pineapple 4",
     href: "#",
     imageUrl: ImgPineapple4.src,
@@ -389,6 +437,7 @@ export const products: Product[] = [
   },
   {
     id: 49,
+    slug: "pizza-1",
     title: "Pizza 1",
     href: "#",
     imageUrl: ImgPizza1.src,
@@ -396,6 +445,7 @@ export const products: Product[] = [
   },
   {
     id: 50,
+    slug: "pizza-2",
     title: "Pizza 2",
     href: "#",
     imageUrl: ImgPizza2.src,
@@ -403,6 +453,7 @@ export const products: Product[] = [
   },
   {
     id: 51,
+    slug: "pizza-time",
     title: "Pizza Time",
     href: "#",
     imageUrl: ImgPizzaTime.src,
