@@ -23,6 +23,7 @@ const config: Config = {
         "neon-purple-dark": "#1d1438",
         "error-red": "#ff6b6b",
         lavender: "#b3b3cc",
+        favorite: "#e586fc",
       },
     },
   },

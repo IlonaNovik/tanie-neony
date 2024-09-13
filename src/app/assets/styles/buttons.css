@@ -39,6 +39,14 @@
     0 0 0.5em 0 var(--clr-neon);
 }
 
+.secondary-button {
+  @apply flex items-center justify-center gap-2 text-lg uppercase font-bold px-4 py-2 rounded-lg bg-neon-purple hover:bg-neon-purple-dark hover:ring-2 hover:ring-neon-purple;
+}
+
+.button-sm {
+  @apply text-base px-2 py-1.5;
+}
+
 @media screen and (max-width: 640px) {
   .neon-button-shade,
   .neon-button {
