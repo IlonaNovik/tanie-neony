@@ -45,8 +45,8 @@ export const ColorChips: FC<ColorChipsProps> = ({
             onChange?.(value);
           }}
           className={cn(
-            "size-8 rounded-full focus:ring-neon-pink hover:scale-110 transition-transform",
-            selected === value ? "animate-pulse" : "",
+            "rounded-full focus:ring-neon-pink hover:scale-110 transition-transform",
+            selected === value ? "animate-pulse size-9" : "size-8",
           )}
           style={{
             background: COLORS[value as keyof typeof COLORS],
