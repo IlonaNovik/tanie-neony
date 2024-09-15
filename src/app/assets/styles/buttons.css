@@ -17,6 +17,9 @@
   transition: filter 0.3s;
 }
 
+.text-favorite {
+  filter: drop-shadow(0 0 0.9em var(--clr-favorite));
+}
 .neon-button-nav:hover {
   border-color: var(--clr-neon);
   text-shadow:
