@@ -51,6 +51,7 @@ export const ProductImage: FC<ProductImageProps> = ({
       <button
         className="absolute right-2 top-2 size-10 cursor-pointer text-favorite"
         onClick={addToFavorites}
+        aria-label="add to favorites"
       >
         {favorite ? (
           <HeartIconSolid className="size-8" />
